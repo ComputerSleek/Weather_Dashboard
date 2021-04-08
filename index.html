@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard</title>
+</head>
+<body>
+    <header class="hero row justify-content-center p-2">
+        <h1 class="app-title">Weather Dashboard</h1>
+    </header> 
+    <main class="container pt-3">
+        <div class="row">
+            <!-- Search column bg-primary btn-outline-secondary-->
+            <div class="col-12 col-md-3">
+                <aside class="filters mx-auto">
+                    <div class="panel panel-default">
+                        <h5 class="panel-heading">Search for a City:</h5>
+                        <div class="panel-body">
+                            <form id="user-form">
+                                <div class="form-group mb-3">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="city-name">
+                                        <div class="input-group-append">
+                                            <button class="btn bg-primary text-white" type="submit"><i class="fa fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="cities-container">
+                            <ul class="list-group"></ul>
+                            <button id="clear-btn" type="submit" class="btn bg-default mt-2 text-secondary"><i class="fa fa-trash mr-2 text-danger"></i>Delete Search History</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            <!-- Results column -->
+            <div class="col-12 col-md-9">
+                <div class="row d-block mx-auto">
+                    <div class="card">
+                        <div class="card-body mt-0">
+                            <h3 class="card-title mt-0" id="city-searched"></h3>
+                            <div id="current-weather-container"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row d-block mx-auto" id="forecast-container"></div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
