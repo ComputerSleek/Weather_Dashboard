@@ -50,8 +50,6 @@ var getCurrentWeather = function(cityName) {
     // format the OpenWeather api url for current weather, one location
     var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=imperial&appid=${apiKey}`;
      
-    // var apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apikey}`;
-
     fetch(apiURL)
     .then(response => response.json())
     .then(data => {
