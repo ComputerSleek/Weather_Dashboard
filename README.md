@@ -4,7 +4,7 @@ The Weather Dashboard App uses the OpenWeather API to retrieve a m 5 day forecas
 
 ## User Story
 
-```
+
 As a traveler, you should be able to see the weather outlook for multiple cities so that you can plan a trip accordingly
 
 ## Link
